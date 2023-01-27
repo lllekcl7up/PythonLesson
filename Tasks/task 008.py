@@ -6,6 +6,7 @@
 # 3 2 4 -> yes
 # 3 2 1 -> no
 
+
 n = int(input("Введите n "))
 m = int(input("Введите m "))
 k = int(input("Введите k "))
