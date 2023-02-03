@@ -72,16 +72,16 @@
 # Output: {'S005', 'S002', 'S007', 'S001', 'S009'} 
 # Примечание: Список словарей задан изначально. Пользователь его не вводит
 
-def dict_finder(d):
-    s = set()
-    for i in d:
-        for j in i:
-            if not i[j] in s:
-                s.add(i[j])
-    print (s)
+# def dict_finder(d):
+#     s = set()
+#     for i in d:
+#         for j in i:
+#             if not i[j] in s:
+#                 s.add(i[j])
+#     print (s)
 
-dict_list = [{"V":"S001"},{"V":"S002"},{"VI":"S001"},{"VI": "S005"},{"VII":"S005"},{"V":"S009"},{"VIII":"S007"}]
-dict_finder(dict_list)
+# dict_list = [{"V":"S001"},{"V":"S002"},{"VI":"S001"},{"VI": "S005"},{"VII":"S005"},{"V":"S009"},{"VIII":"S007"}]
+# dict_finder(dict_list)
 
 # Задача №23. Решение в группах
 # Дан массив, состоящий из целых чисел. Напишите 
@@ -110,3 +110,26 @@ dict_finder(dict_list)
 #         a.append(f'{array[i-1]} < {array[i]}')
 # print(counter,a)
 # print(a)
+
+# from random import randint 
+
+# my_list = [randint(-10,10) for _ in range(randint(1,10))]
+# print(my_list)
+
+# counter=0
+# for i in range(1, len(my_list)):
+#     if my_list[i] > my_list[i-1]:
+#         counter +=1
+
+# print(counter)
+
+
+# Решение 2
+from random import randint 
+
+my_list = [randint(-10,10) for _ in range(randint(1,10))]
+print(my_list)
+
+new_list = [f'{my_list[i]} > {my_list[i-1]}' for i in range(1,len(my_list)) if my_list[i] > my_list[i-1]]
+print(*new_list)
+print(len(new_list))
