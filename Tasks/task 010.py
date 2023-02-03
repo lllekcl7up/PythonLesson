@@ -8,12 +8,6 @@
 
 from random import randint as rndm
 
-number = int(input("Введите число монеток: "))
-coins = []
-for i in range(number):
-    coins.append(rndm(0,1))
-print(coins)
-
 def HeadsAndTails(list1):
     tails = 0
     heads = 0
@@ -27,5 +21,11 @@ def HeadsAndTails(list1):
     else:
         return tails
 
+
+number = int(input("Введите число монеток: "))
+coins = []
+for i in range(number):
+    coins.append(rndm(0,1))
+print(coins)
 print(HeadsAndTails(coins))
 
