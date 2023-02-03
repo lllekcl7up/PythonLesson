@@ -13,4 +13,4 @@ def DegreeTwo(n):
             degree.append(k)
     return degree
 
-print(DegreeTwo(number))
+print(*DegreeTwo(number))
