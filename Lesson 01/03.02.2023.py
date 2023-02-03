@@ -111,10 +111,10 @@
 # print(counter,a)
 # print(a)
 
-# from random import randint 
+from random import randint 
 
-# my_list = [randint(-10,10) for _ in range(randint(1,10))]
-# print(my_list)
+my_list = [randint(-10,10) for _ in range(randint(1,10))]
+print(my_list)
 
 # counter=0
 # for i in range(1, len(my_list)):
