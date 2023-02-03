@@ -26,6 +26,6 @@
 # print(h.f(1))
 
 # Умножает символ число
-def new_string(symbol,count = 3):
-    return symbol * count
-print(new_string('!'))
+# def new_string(symbol,count = 3):
+#     return symbol * count
+# print(new_string('!'))
