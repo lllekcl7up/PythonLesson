@@ -21,6 +21,7 @@ def HeadsAndTails(list1):
     else:
         return tails
 
+
 number = int(input("Введите число монеток: "))
 coins = []
 for i in range(number):
