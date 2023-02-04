@@ -23,5 +23,5 @@ counter = 0
 for i in range(0, len(array)):
     if array[i] == x:
         counter +=1
-print(array)
-print(f'{counter}')
+print(*array)
+print(f'Число {x} встречается {counter} раз')
