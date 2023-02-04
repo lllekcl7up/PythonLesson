@@ -7,19 +7,21 @@
 # 1 2 3 4 5
 # 3
 # -> 1
-# import random 
 
-# def create_random_list(total):
-#     array = [random.randint(1,10) for i in range (total)]
-#     return array
+import random 
 
-# n = int(input('Введите размер списка: '))
-# array = create_random_list(n)
+def create_random_list(n):
+    array = [random.randint(1,10) for i in range (n)]
+    return array
 
-# print(array)
+n = int(input('Введите размер списка: '))
+x = int(input("Введите искомое число: "))
+array = create_random_list(n)
 
 
-# from random import randint 
-# n = int(input("Введите число: "))
-# my_list = [randint(0,10) for _ in range(n)]
-# print(my_list)
+counter = 0
+for i in range(0, len(array)):
+    if array[i] == x:
+        counter +=1
+print(array)
+print(f'{counter}')
