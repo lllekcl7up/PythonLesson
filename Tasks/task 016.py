@@ -14,14 +14,17 @@ def create_random_list(n):
     array = [random.randint(1,10) for i in range (n)]
     return array
 
+def finder (array):
+    counter = 0
+    for i in range(0, len(array)):
+        if array[i] == x:
+           counter +=1
+    return counter
+
 n = int(input('Введите размер списка: '))
-x = int(input("Введите искомое число: "))
 array = create_random_list(n)
+# print(*array)
+x = int(input("Введите искомое число: "))
 
-
-counter = 0
-for i in range(0, len(array)):
-    if array[i] == x:
-        counter +=1
-print(*array)
-print(f'Число {x} встречается {counter} раз')
+counter = finder(array)
+print(f'Число {x} в списке {array} встречается {counter} раз')
