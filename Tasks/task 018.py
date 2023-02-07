@@ -30,3 +30,22 @@ x = int(input("Введите искомое число: "))
 near = finder_near(array)
 print(f'Ближайшее по значению к числу {x} из списка {array} это {near}')
 
+# Решение Оксаны
+# my_list = [int(input('type element: ')) for i in range(int(input('type amount: ')))]
+# x = int(input('type X: '))
+# if x in my_list:
+#     print(x) # если х есть в изначальном списке то его и выводим
+# else:
+#     my_list.append(x) # добавили в первый список значение Х
+#     my_list = sorted(my_list) # отсортировали список от меньшего к большему
+#     if my_list.index(x) == len(my_list) - 1: # если искомый элемент самый большой
+#         element2 = my_list[my_list.index(x) - 1] # ближайший слева элемент к искомому
+#         print(element2)
+#     elif my_list.index(x) == 0: # если искомый элемент самый маленький
+#         element = my_list[my_list.index(x) + 1] # [1] ближайший справа элемент к искомому
+#         print(element)
+#     else: # если искомый элемент в середине, выводим оба соседних с ним элемнта
+#         element = my_list[my_list.index(x) - 1] # ближайший слева элемент к искомому
+#         print(element)
+#         element2 = my_list[my_list.index(x) + 1] # ближайший справа элемент к искомому
+#         print(element2)
