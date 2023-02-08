@@ -10,5 +10,21 @@
 # Напишите программу для нахождения максимального числа ягод, которое может
 # собрать за один заход собирающий модуль, находясь перед некоторым кустом
 # заданной во входном файле грядки.
-# 4 -> 1 2 3 4
+# # 4 -> 1 2 3 4
 # 9
+
+import random
+
+def pick_module(l_berry):
+    max = 0
+    for i in range(n):
+        if l_berry[i] + l_berry[i+1] + l_berry[i+2] > max:
+            max = l_berry[i] + l_berry[i+1] + l_berry[i+2]
+    return max
+
+n = int(input("Введите кол-во кустов черники: "))
+l_berry = [random.randint(1,10) for i in range (n)]
+l_berry = l_berry + l_berry[:2] # тут добавляем 2 элемента чтоб клумба стала как бы круглая :)
+
+pickBerries = pick_module(l_berry)
+print(f'Собирающий модуль может максимум собрать {pickBerries} ягод с {l_berry} клумбы')
