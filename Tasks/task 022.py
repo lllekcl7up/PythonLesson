@@ -20,8 +20,8 @@ def merge_without_repeat(list1,list2):
 
 first_n = int(input('Введите кол-во элементов первого набора чисел:'))
 second_n = int(input('Введите кол-во элементов второго набора чисел:'))
-list1 = [int(input(f'Введите элемент {i+1}: ')) for i in range(first_n)]
-list2 = [int(input(f'Введите элемент {i+1}: ')) for i in range(second_n)]
+list1 = [int(input(f'Введите {i+1} элемент первого набора: ')) for i in range(first_n)]
+list2 = [int(input(f'Введите {i+1} элемент второго набора: ')) for i in range(second_n)]
 list3 = []
 
 mwr = merge_without_repeat(list1,list2)
