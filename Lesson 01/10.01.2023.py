@@ -86,14 +86,25 @@
 # Input: 5
 # Output: yes
 
-def check(num):
-    for i in range (2, num//2 + 1):
-        if num % i == 0:
-            return 'No'
-    return 'Yes'
-num = int(input('Введите число: '))
-number = check(num)
-print(number)
+# def check(num):
+#     for i in range (2, num//2 + 1):
+#         if num % i == 0:
+#             return 'No'
+#     return 'Yes'
+# num = int(input('Введите число: '))
+# number = check(num)
+# print(number)
+
+
+# def simple_num(x):
+#     num = list(range(2,x))
+#     for i in num:
+#         if x % i == 0:
+#             return 'No'
+#     return 'Yes'
+
+# n = int(input('Введите число:  '))
+# print(simple_num(n))
 
 
 
@@ -106,4 +117,18 @@ print(number)
 # # Input: 2 -> 3 4
 # # Output: 4 3
 
+# from random import randint
 
+# n = 6
+
+# def recurs(x):
+#    if x == 0:
+#         print()
+#         return
+
+#    number = randint(0,100)
+#    print(number, end=" ")
+#    recurs(x-1)
+#    print(number, end=" ")
+
+# recurs(n)
