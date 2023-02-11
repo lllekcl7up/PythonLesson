@@ -11,12 +11,12 @@
 # print (a**b)
 
 # С рекурсией 
-# def power(a, b):
-#     if (b == 1):
-#         return (a)
-#     if (b != 1):
-#         return (a * power(a, b - 1))
+def power(a, b):
+    if (b == 1):
+        return (a)
+    if (b != 1):
+        return (a * power(a, b - 1))
 
-# a = int(input("Введите число a: "))
-# b = int(input("Введите число b: "))
-# print(f'{a} в степени {b} = {power(a, b)}')
+a = int(input("Введите число a: "))
+b = int(input("Введите число b: "))
+print(f'{a} в степени {b} = {power(a, b)}')
