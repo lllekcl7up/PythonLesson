@@ -6,8 +6,11 @@
 # 4
 
 def recurs_sum(a,b):
-    return recurs_sum(a+1, b-1) if b > 0 else a
-
+    if b > 0:
+        return recurs_sum(a+1, b-1) 
+    else:
+        return a
+    
 a = int(input('Введите a: '))
 b = int(input('Введите b: '))
 print (f'{a} + {b} = {recurs_sum(a,b)}')
@@ -20,8 +23,4 @@ print (f'{a} + {b} = {recurs_sum(a,b)}')
 #     b = b - 1
 
 # print (a)
-
-
-
-
 
