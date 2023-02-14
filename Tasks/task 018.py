@@ -9,18 +9,21 @@
 # 6
 # -> 5
 
-import random 
+import random
+
 
 def create_random_list(n):
-    array = [random.randint(1,20) for i in range (n)]
+    array = [random.randint(1, 20) for i in range(n)]
     return array
 
-def finder_near (array):
-    num = array [0]
+
+def finder_near(array):
+    num = array[0]
     for i in range(len(array)):
-        if (abs(array[i]-x)<abs(num-x) or abs(array[i]-x)==abs(num-x) and array[i]<num):
-            num=array[i]
+        if (abs(array[i]-x) < abs(num-x) or abs(array[i]-x) == abs(num-x) and array[i] < num):
+            num = array[i]
     return num
+
 
 n = int(input('Введите размер списка: '))
 array = create_random_list(n)

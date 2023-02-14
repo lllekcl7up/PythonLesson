@@ -105,16 +105,34 @@
 # Ввод: Вывод:
 # 300 220 284
 
-k = 50
-res = []
-sum1 = 0
-for i in range (1,k):
-    for j in range(1,k):
-        while sum1 < k:
-            if i % j == 0:
-                sum1 += j
-                if sum1 % i == 0:
-                    res.append(i)
-                res.append(sum1)
-print(res)
+# k = int(input('Введите число: '))
 
+# res = []
+# sum1 = 0
+# for i in range (1,k):
+#     for j in range(1,k):
+#         while sum1 < k:
+#             if i % j == 0:
+#                 sum1 += j
+#             if sum1 % i == 0:
+#                     res.append(i)
+#                     res.append(sum1)
+# print(res)
+
+
+
+
+# Решение Лёхи
+# k = int(input('Введите число k: '))
+
+# sum_dict = dict()
+# for i in range(1, k + 1):
+#     sum_dict[i] = 1
+#     for j in range(2, (i//2)+1):
+#         if i % j == 0:
+#             sum_dict[i] += j
+
+# for i in range(1, len(sum_dict) + 1):
+#     for j in range(i + 1, len(sum_dict) + 1):
+#         if i == sum_dict[j] and j == sum_dict[i]:
+#             print(i, j)
