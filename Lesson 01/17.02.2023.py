@@ -122,22 +122,18 @@
 # функция, которая принимает объект и вычисляет его 
 # характеристику.
 
-values = [0, 2, 10, 6] 
+# values = [0, 2, 10, 6] 
 
-def same_by(characteristic, objects):
-    objects1 = map(characteristic,objects)
-    if objects1 == objects:
-        
-if same_by(lambda x: x % 2, values):
-    print('same')
-else:
-    print('different')
+# if same_by(lambda x: x % 2, values):
+#     print('same')
+# else:
+#     print('different')
 
-вот наша функция def same_by(characteristic, objects):
-    for i in objects:
-        if not characteristic(i):
-            return False
-    return True
+# def same_by(characteristic, objects):
+#     for i in objects:
+#         if not characteristic(i):
+#             return False
+#     return True
 
 
 
